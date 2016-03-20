@@ -16,19 +16,12 @@ body {
 header {
   width: 100%;
  height: 40px;
- border: solid 1px blue;
+ /*border: solid 1px blue;*/
  color: white;
  background-color: black;
  font-size: 16px;
 }
-/*.pseudo-nav {
-  width: 100%;
-  height: 40px;
-  color: white;
-  background-color: black;
-  font-size: 16px;
 
-}*/
 .main-width {
   width: 1054px;
   margin: 0 auto;
@@ -80,7 +73,7 @@ font-size: 0;
   height: 504px;
   display: inline-block;
   vertical-align: middle;
-  border: solid 1px red;
+  /*border: solid 1px red;*/
   padding-top: 225px;
 }
 .change-page span {
@@ -92,7 +85,6 @@ font-size: 40px;
 .box {
   width: 486px;
   height: 504px;
-  border: solid 1px red;
   display: inline-block;
   margin: 0 auto;
   vertical-align: middle;
@@ -103,8 +95,8 @@ font-size: 40px;
   background-position: 0 100px;
   background-size: 470px 335px;
   background-repeat: no-repeat;
-
 }
+
 .box h1, .box span {
   text-transform: uppercase;
   font-size: 32px;
@@ -144,7 +136,7 @@ a {
   widht: 100%;
   height: 350px;;
   margin-top: 27px;
-  border: solid 1px blue;
+  /*border: solid 1px blue;*/
   font-size: 0;
 }
 .pic {
@@ -201,12 +193,12 @@ a {
 .section3 {
   width: 100%;
   height: 725px;
-  border: solid 1px brown;
+  /*border: solid 1px brown;*/
   background-color: #f0f0f0;
   font-size: 0;
 }
 .section3 h3 {
-margin: 45px 0 3px 0;
+margin: 14px 0 3px 0;
 font-size: 23px;
 color: #5e5e5e;
 
@@ -228,8 +220,6 @@ color: #5e5e5e;
   margin-right: 32px;
   position: relative;
   text-align: center;
-
-
 }
 
 .s3-box:last-child {
@@ -339,4 +329,131 @@ color: #5e5e5e;
 .s3-box-center .list-wrapper li:nth-of-type(2n+1) {
   background-color: #f0f0f0;
   color: #757575;
+}
+
+.section4 {
+  width: 100%;
+  height:575px;
+  /*border: solid 1px red;*/
+}
+
+.s4-right-wrapper,
+.s4-let-wrapper {
+  /*border: solid 1px black;*/
+  height: 450px;
+}
+.s4-let-wrapper {
+  width: 63%;
+  float: left;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 633px;
+  height: 66px;
+  margin-bottom: 27px;
+  padding-left: 15px;
+  border: solid 1px #a1e6d1;
+  color:#a3a3a3;
+  font-size: 30px;
+}
+
+input[type="text"] {
+  margin-top: 46px;
+}
+
+textarea{
+  height: 187px;
+  resize: none;
+}
+.s4-right-wrapper {
+  width: 36%;
+  float: right;
+}
+.s4-pic {
+  height: 260px;
+  width: 300px;
+  background-image: url('../imagesOk/red_chair.png');
+  background-position: 37px 16px;
+  background-size: 264px 210px;
+  background-repeat: no-repeat;
+  /*border: soild 1px red;*/
+}
+.personal-data {
+  font-size: 20px;
+  color: #a3a3a3;
+
+}
+.personal-data div {
+  width: 80%;
+float: right;
+}
+.contact-wrapper h3 {
+  font-size: 19px;
+  margin: 32px 0 6px 0;
+}
+.contact-wrapper hr {
+  width: 319px;
+  height: 8px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  display: block;
+  background-color: #26c7a9;
+}
+.personal-data img {
+  border: solid 1px #a1e6d1;
+  margin-left: 12px;
+}
+
+input[type="submit"] {
+  padding: 15px 107px 15px 107px;
+  margin: 36px 0 0 19px;
+  font-size: 34px;
+}
+}
+footer {
+  width: 100%;
+  height: 104px;
+}
+
+.f-left-box {
+  width:65%;
+  height: 104px;
+  display: inline-block;
+  /*border: solid 1px green;*/
+  vertical-align: top;
+}
+.f-left-box img {
+  width: 20px;
+  height: 20px;
+}
+.f-left-box p{
+  margin-top:15px;
+  font-size: 17px;
+  color:#cdcdcd;
+}
+.f-center-box {
+  width:17%;
+  height: 104px;
+  display: inline-block;
+  /*border: solid 1px green;*/
+  vertical-align: top;
+}
+
+.f-right-box {
+  width: 17%;
+  height: 104px;
+  display: inline-block;
+  /*border: solid 1px green;*/
+  vertical-align: top;
+}
+.f-right-box h3 {
+  margin-top: 15px;
+  margin-left: 37px;
+  color:#cdcdcd;
+}
+footer span {
+  font-weight: bold;
+  color:#cdcdcd;
+  font-size: 17px;
 }
