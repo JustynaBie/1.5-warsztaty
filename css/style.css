@@ -20,6 +20,7 @@ width: 100%;
  color: white;
  background-color: black;
  font-size: 16px;
+ letter-spacing: 1.2px;
 }
 
 .main-width {
@@ -29,17 +30,58 @@ width: 100%;
 
 nav {
   float: right;
-  text-transform: uppercase;
-
 }
-nav li {
+
+nav>ul>li {
   display: inline-block;
-  padding: 0 21px 0 21px;
-  margin-top: 13px;
+  padding-left: 40px;
+  line-height: 40px;
+  /*margin-top: 13px;*/
   font-weight: bold;
   font-size: 13px;
-
+  position: relative;
 }
+
+nav>ul>li>ul {
+  line-height: normal;
+}
+
+nav>ul>li:hover {
+  cursor: pointer;
+}
+
+.invisible-triangle {
+  height: 9px;
+  left: 0;
+  right: 0;
+  top: -8px;
+  position: absolute;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 9px solid black;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  position: relative;
+  margin: 0 auto;
+}
+
+.dd-menu {
+  top: 50px;
+  left: 22px;
+  padding: 6px 0 4px 0;
+  display: none;
+  background-color: black;
+  z-index: 1;
+  position: absolute;
+}
+
+.dd-menu li {
+  padding: 7px 18px 7px 13px;
+}
+
 .logo {
   margin-top: 13px;
   float: left;
@@ -171,6 +213,7 @@ a {
   margin-bottom: 17px;
   font-size: 15px;
   font-weight: bold;
+  visibility: visible;
 }
 .pic:first-child h3,.pic:nth-child(2) h3 {
   padding: 17px 0 23px 0;
@@ -178,6 +221,7 @@ a {
   padding-left: 12px;
   background-color: rgba(255, 255, 255, .5);
 }
+
 
 .pic p {
   font-size: 12px;
@@ -459,14 +503,16 @@ footer {
   display: inline-block;
   /*border: solid 1px green;*/
   vertical-align: top;
+  letter-spacing: 1.2px;
 }
 .f-right-box h3 {
-  margin-top: 15px;
-  margin-left: 37px;
+  margin-top: 11px;
+  margin-left: 33px;
   color:#cdcdcd;
+  font-size: 20px;
 }
 footer span {
   font-weight: bold;
   color:#cdcdcd;
-  font-size: 17px;
+  font-size: 20px;
 }
