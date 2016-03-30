@@ -131,15 +131,18 @@ color: #26c7a9;
   vertical-align: middle;
 }
 
-.main-pic {
-  width: 382px;
-  background-image: url('../imagesOk/black_chair.png');
-  background-position: -86px 69px;
-  background-size: 580px 422px;
-  background-repeat: no-repeat;
+.main-pic img {
+  width:432px;
+  height:auto;
+  padding-top: 115px;
 }
+.img-list li {
+  display: none;
+}
+
 .box-txt {
-  width:584px;
+  width:540px;
+  padding-right: 79px;
 }
 .box h1, .box span {
   text-transform: uppercase;

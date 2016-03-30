@@ -1,7 +1,13 @@
 document.addEventListener("DOMContentLoaded", function(){
   var menu = document.querySelectorAll("nav>ul>li");
   var pics = document.querySelectorAll(".pic");
-console.log(pics);
+  var btnPrev = document.getElementById("btnPrev");
+  var btnNExt = document.getElementById("btnNext");
+  var sliderPics = document.querySelectorAll(".img-list li");
+  var counterVisiblePic = 0;
+  console.log(btnPrev);
+  console.log(btnNext);
+  console.log(sliderPics);
 
 
   for(var i=0; i<menu.length; i++){
@@ -27,6 +33,26 @@ console.log(pics);
       hideText.style.visibility = "visible";
     });
   }
+
+  sliderPics[counterVisiblePic].style.display = "inline-block";
+
+ btnPrev.addEventListener("click", function(event){
+   sliderPics[counterVisiblePic].style.display = "none";
+   counterVisiblePic--;
+   if(counterVisiblePic < 0) {
+     counterVisiblePic = sliderPics.length - 1;
+   }
+   sliderPics[counterVisiblePic].style.display = "inline-block";
+ });
+
+  btnNext.addEventListener("click", function(event){
+    sliderPics[counterVisiblePic].style.display = "none";
+    counterVisiblePic++;
+    if(counterVisiblePic >= sliderPics.length){
+        counterVisiblePic = 0;
+      }
+    sliderPics[counterVisiblePic].style.display = "inline-block";
+  });
 
 
 });
