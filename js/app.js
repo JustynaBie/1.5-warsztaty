@@ -5,9 +5,10 @@ document.addEventListener("DOMContentLoaded", function(){
   var btnNExt = document.getElementById("btnNext");
   var sliderPics = document.querySelectorAll(".img-list li");
   var counterVisiblePic = 0;
-  console.log(btnPrev);
-  console.log(btnNext);
-  console.log(sliderPics);
+  var listArrow = document.querySelectorAll(".list_arrow");
+
+
+
 
 
   for(var i=0; i<menu.length; i++){
@@ -54,5 +55,15 @@ document.addEventListener("DOMContentLoaded", function(){
     sliderPics[counterVisiblePic].style.display = "inline-block";
   });
 
+  for(var i=0; i<listArrow.length; i++){
+    listArrow[i].addEventListener("click", function(event){
+      var listPanel = this.nextElementSibling;
+      if(listPanel.style.display === "none"){
+         listPanel.style.display = "block";
+      }else{
+         listPanel.style.display = "none";
+      }
 
+    });
+  }
 });
