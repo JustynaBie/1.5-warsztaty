@@ -119,6 +119,12 @@ document.addEventListener("DOMContentLoaded", function(){
       var print = totalCost(suma);
       transportValue.innerHTML = this.dataset.transportPrice + " zł";
       sumValue.innerHTML = print + " zł";
+    }else{
+      transport.innerHTML ="";
+      suma[3] = 0;
+      var print = totalCost(suma);
+      transportValue.innerHTML = "";
+      sumValue.innerHTML = print + " zł";
     }
   });
 });
